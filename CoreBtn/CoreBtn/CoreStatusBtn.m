@@ -28,12 +28,12 @@
         
         _status=status;
         
-        self.userInteractionEnabled=(CoreStatusBtnStatusNormal==status || CoreStatusBtnStatusSuccess==status);
+        self.enabled=(CoreStatusBtnStatusNormal==status || CoreStatusBtnStatusSuccess==status);
         
         if(status==CoreStatusBtnStatusFalse){
             //执行一个失败动画
             [self.layer addAnimation:[AnimForCoreBtn shake] forKey:@"shake"];
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 self.status=CoreStatusBtnStatusNormal;
             });
         }

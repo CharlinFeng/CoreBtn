@@ -18,6 +18,7 @@
     
     _backgroundColorForNormal=backgroundColorForNormal;
     [self setBackgroundImage:[UIImage imageFromContextWithColor:backgroundColorForNormal] forState:UIControlStateNormal];
+    if(_backgroundColorForDisabled==nil) self.backgroundColorForDisabled=backgroundColorForNormal;
 }
 
 

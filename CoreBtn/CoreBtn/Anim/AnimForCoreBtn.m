@@ -23,10 +23,10 @@
     kfa.values=@[@0.08f,@(0),@(-0.08f),@(0),@0.08f,@(0),@(-0.08f)];
     
     //设置时间
-    kfa.duration=0.1f;
+    kfa.duration=0.07f;
     
     //是否重复
-    kfa.repeatCount=2.0f;
+    kfa.repeatCount=4.0f;
     
     //是否反转
     kfa.autoreverses=YES;
