@@ -7,6 +7,8 @@
 //
 
 #import "CoreStatusBtnMaskView.h"
+#import "MaskViewAnimView.h"
+#import "UIView+CoreBtnExtend.h"
 
 @interface CoreStatusBtnMaskView ()
 
@@ -14,6 +16,9 @@
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *iv;
 
+
+/** 动画view */
+@property (nonatomic,strong) MaskViewAnimView *animView;
 
 @end
 
@@ -35,21 +40,24 @@
     self.status=CoreStatusBtnStatusNormal;
 }
 
+-(void)layoutSubviews{
+    
+    [super layoutSubviews];
+    
+//    self.animView.frame=self.bounds;
+}
 
 
 -(void)didMoveToSuperview{
     
     [super didMoveToSuperview];
     
-    self.translatesAutoresizingMaskIntoConstraints=NO;
-    
-    CoreStatusBtnMaskView *maskView=self;
-    
-    NSDictionary *views=NSDictionaryOfVariableBindings(maskView);
-    
-    [self.superview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[maskView]-0-|" options:0 metrics:nil views:views]];
-    [self.superview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[maskView]-0-|" options:0 metrics:nil views:views]];
+    [self constraintPrepare:self];
 }
+
+
+
+
 
 /**
  *  状态改变
@@ -105,9 +113,11 @@
  *  进度
  */
 -(void)statusProgress{
-    [UIView animateWithDuration:0.5f animations:^{
-        self.alpha=1.0f;
-    }];
+    
+    self.alpha=1.0f;
+    
+    //显示
+    [self.animView show:self];
 }
 
 /**
@@ -149,6 +159,19 @@
     self.iv.color=color;
 }
 
+
+
+-(MaskViewAnimView *)animView{
+    
+    if(_animView == nil){
+        
+        _animView = [[MaskViewAnimView alloc] init];
+
+        _animView.backgroundColor=self.backgroundColor;
+    }
+    
+    return _animView;
+}
 
 
 @end

@@ -20,10 +20,11 @@
     CAKeyframeAnimation *kfa=[CAKeyframeAnimation animationWithKeyPath:@"transform.rotation"];
     
     //值
-    kfa.values=@[@0.08f,@(0),@(-0.08f),@(0),@0.08f,@(0),@(-0.08f)];
+    CGFloat angle = .16f;
+    kfa.values=@[@(angle),@(0),@(-angle),@(0),@(angle),@(0),@(-angle)];
     
     //设置时间
-    kfa.duration=0.07f;
+    kfa.duration=0.1f;
     
     //是否重复
     kfa.repeatCount=4.0f;
@@ -36,6 +37,10 @@
     
     return kfa;
 }
+
+
+
+
 
 
 

@@ -21,6 +21,46 @@
 @implementation CoreStatusBtn
 
 
+-(instancetype)initWithFrame:(CGRect)frame{
+    
+    self = [super initWithFrame:frame];
+    
+    if(self){
+        
+        //按钮准备
+        [self btnPrepare];
+    }
+    
+    return self;
+}
+
+
+
+-(id)initWithCoder:(NSCoder *)aDecoder{
+    
+    self=[super initWithCoder:aDecoder];
+    
+    if(self){
+        
+        //按钮准备
+        [self btnPrepare];
+    }
+    
+    return self;
+}
+
+
+
+
+/*
+ *  按钮准备
+ */
+-(void)btnPrepare{
+    
+    self.msg=nil;
+}
+
+
 
 -(void)setStatus:(CoreStatusBtnStatus)status{
 
@@ -32,10 +72,12 @@
         
         if(status==CoreStatusBtnStatusFalse){
             //执行一个失败动画
-            [self.layer addAnimation:[AnimForCoreBtn shake] forKey:@"shake"];
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                self.status=CoreStatusBtnStatusNormal;
-            });
+            CAKeyframeAnimation *kfa = [AnimForCoreBtn shake];
+            
+            //设置代理
+            kfa.delegate=self;
+            
+            [self.layer addAnimation:kfa forKey:@"shake"];
         }
         
         self.maskView.status=status;
@@ -44,9 +86,12 @@
 
 
 
+
 -(void)setMsg:(NSString *)msg{
     
     _msg=msg;
+    
+    if(msg==nil) msg=self.currentTitle;
     
     dispatch_async(dispatch_get_main_queue(), ^{
         self.maskView.msg=msg;
@@ -67,5 +112,14 @@
     return _maskView;
 }
 
+
+-(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.25f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.status=CoreStatusBtnStatusNormal;
+    });
+}
+
+
+ 
 
 @end

@@ -50,14 +50,11 @@
 
 -(IBAction)btnClick:(CoreStatusBtn *)btn{
     
-    NSLog(@"事件来了：%@",btn);
-    
     btn.status=CoreStatusBtnStatusProgress;
 
     //子线程测试
     dispatch_queue_t queue=dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), queue, ^{
-        NSLog(@"当前线程:%@",[NSThread currentThread]);
         btn.status=CoreStatusBtnStatusFalse;
     });
 }
