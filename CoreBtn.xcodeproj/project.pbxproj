@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		893A3A021AE367DF00CF9E7E /* CAAnimation+CoreBtnExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 893A3A011AE367DF00CF9E7E /* CAAnimation+CoreBtnExtend.m */; };
 		897FF64D1AE2BDBE002F6B50 /* CoreBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 897FF63D1AE2BDBE002F6B50 /* CoreBtn.m */; };
 		897FF64E1AE2BDBE002F6B50 /* CoreStatusBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 897FF63F1AE2BDBE002F6B50 /* CoreStatusBtn.m */; };
-		897FF64F1AE2BDBE002F6B50 /* AnimForCoreBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 897FF6431AE2BDBE002F6B50 /* AnimForCoreBtn.m */; };
 		897FF6501AE2BDBE002F6B50 /* UIImage+ColorForBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 897FF6461AE2BDBE002F6B50 /* UIImage+ColorForBtn.m */; };
 		897FF6511AE2BDBE002F6B50 /* CoreStatusBtnMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 897FF6491AE2BDBE002F6B50 /* CoreStatusBtnMaskView.m */; };
 		897FF6521AE2BDBE002F6B50 /* CoreStatusBtnMaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897FF64A1AE2BDBE002F6B50 /* CoreStatusBtnMaskView.xib */; };
 		897FF6531AE2BDBE002F6B50 /* MaskViewAnimView.m in Sources */ = {isa = PBXBuildFile; fileRef = 897FF64C1AE2BDBE002F6B50 /* MaskViewAnimView.m */; };
 		897FF6561AE2BDE4002F6B50 /* UIView+CoreBtnExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 897FF6551AE2BDE4002F6B50 /* UIView+CoreBtnExtend.m */; };
+		897FF6591AE2C0E0002F6B50 /* CoreCountBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 897FF6581AE2C0E0002F6B50 /* CoreCountBtn.m */; };
 		D6B757011AA4BD2B00AF0B0F /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B757001AA4BD2B00AF0B0F /* 1.png */; };
 		D6BCD5351AA499590021850C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BCD5341AA499590021850C /* main.m */; };
 		D6BCD5381AA499590021850C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BCD5371AA499590021850C /* AppDelegate.m */; };
@@ -36,12 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		893A3A001AE367DF00CF9E7E /* CAAnimation+CoreBtnExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+CoreBtnExtend.h"; sourceTree = "<group>"; };
+		893A3A011AE367DF00CF9E7E /* CAAnimation+CoreBtnExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+CoreBtnExtend.m"; sourceTree = "<group>"; };
 		897FF63C1AE2BDBE002F6B50 /* CoreBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreBtn.h; sourceTree = "<group>"; };
 		897FF63D1AE2BDBE002F6B50 /* CoreBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreBtn.m; sourceTree = "<group>"; };
 		897FF63E1AE2BDBE002F6B50 /* CoreStatusBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatusBtn.h; sourceTree = "<group>"; };
 		897FF63F1AE2BDBE002F6B50 /* CoreStatusBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatusBtn.m; sourceTree = "<group>"; };
-		897FF6421AE2BDBE002F6B50 /* AnimForCoreBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimForCoreBtn.h; sourceTree = "<group>"; };
-		897FF6431AE2BDBE002F6B50 /* AnimForCoreBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimForCoreBtn.m; sourceTree = "<group>"; };
 		897FF6451AE2BDBE002F6B50 /* UIImage+ColorForBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorForBtn.h"; sourceTree = "<group>"; };
 		897FF6461AE2BDBE002F6B50 /* UIImage+ColorForBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorForBtn.m"; sourceTree = "<group>"; };
 		897FF6481AE2BDBE002F6B50 /* CoreStatusBtnMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatusBtnMaskView.h; sourceTree = "<group>"; };
@@ -51,6 +52,8 @@
 		897FF64C1AE2BDBE002F6B50 /* MaskViewAnimView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskViewAnimView.m; sourceTree = "<group>"; };
 		897FF6541AE2BDE4002F6B50 /* UIView+CoreBtnExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+CoreBtnExtend.h"; path = "CoreBtn/UIView+CoreBtnExtend.h"; sourceTree = SOURCE_ROOT; };
 		897FF6551AE2BDE4002F6B50 /* UIView+CoreBtnExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+CoreBtnExtend.m"; path = "CoreBtn/UIView+CoreBtnExtend.m"; sourceTree = SOURCE_ROOT; };
+		897FF6571AE2C0E0002F6B50 /* CoreCountBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreCountBtn.h; sourceTree = "<group>"; };
+		897FF6581AE2C0E0002F6B50 /* CoreCountBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreCountBtn.m; sourceTree = "<group>"; };
 		D6B757001AA4BD2B00AF0B0F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		D6BCD52F1AA499590021850C /* CoreBtn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreBtn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BCD5331AA499590021850C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 			children = (
 				897FF63C1AE2BDBE002F6B50 /* CoreBtn.h */,
 				897FF63D1AE2BDBE002F6B50 /* CoreBtn.m */,
+				897FF6571AE2C0E0002F6B50 /* CoreCountBtn.h */,
+				897FF6581AE2C0E0002F6B50 /* CoreCountBtn.m */,
 				897FF63E1AE2BDBE002F6B50 /* CoreStatusBtn.h */,
 				897FF63F1AE2BDBE002F6B50 /* CoreStatusBtn.m */,
 				897FF6401AE2BDBE002F6B50 /* Lib */,
@@ -100,20 +105,10 @@
 		897FF6401AE2BDBE002F6B50 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				897FF6411AE2BDBE002F6B50 /* Anim */,
 				897FF6441AE2BDBE002F6B50 /* Category */,
 				897FF6471AE2BDBE002F6B50 /* View */,
 			);
 			path = Lib;
-			sourceTree = "<group>";
-		};
-		897FF6411AE2BDBE002F6B50 /* Anim */ = {
-			isa = PBXGroup;
-			children = (
-				897FF6421AE2BDBE002F6B50 /* AnimForCoreBtn.h */,
-				897FF6431AE2BDBE002F6B50 /* AnimForCoreBtn.m */,
-			);
-			path = Anim;
 			sourceTree = "<group>";
 		};
 		897FF6441AE2BDBE002F6B50 /* Category */ = {
@@ -123,6 +118,8 @@
 				897FF6461AE2BDBE002F6B50 /* UIImage+ColorForBtn.m */,
 				897FF6541AE2BDE4002F6B50 /* UIView+CoreBtnExtend.h */,
 				897FF6551AE2BDE4002F6B50 /* UIView+CoreBtnExtend.m */,
+				893A3A001AE367DF00CF9E7E /* CAAnimation+CoreBtnExtend.h */,
+				893A3A011AE367DF00CF9E7E /* CAAnimation+CoreBtnExtend.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -310,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897FF64F1AE2BDBE002F6B50 /* AnimForCoreBtn.m in Sources */,
+				897FF6591AE2C0E0002F6B50 /* CoreCountBtn.m in Sources */,
 				D6BCD53B1AA499590021850C /* ViewController.m in Sources */,
 				897FF6561AE2BDE4002F6B50 /* UIView+CoreBtnExtend.m in Sources */,
 				897FF6511AE2BDBE002F6B50 /* CoreStatusBtnMaskView.m in Sources */,
@@ -319,6 +316,7 @@
 				897FF64D1AE2BDBE002F6B50 /* CoreBtn.m in Sources */,
 				D6BCD5381AA499590021850C /* AppDelegate.m in Sources */,
 				D6BCD5351AA499590021850C /* main.m in Sources */,
+				893A3A021AE367DF00CF9E7E /* CAAnimation+CoreBtnExtend.m in Sources */,
 				897FF6501AE2BDBE002F6B50 /* UIImage+ColorForBtn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

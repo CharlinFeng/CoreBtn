@@ -8,7 +8,7 @@
 
 #import "CoreStatusBtn.h"
 #import "CoreStatusBtnMaskView.h"
-#import "AnimForCoreBtn.h"
+#import "CAAnimation+CoreBtnExtend.h"
 
 @interface CoreStatusBtn ()
 
@@ -72,7 +72,7 @@
         
         if(status==CoreStatusBtnStatusFalse){
             //执行一个失败动画
-            CAKeyframeAnimation *kfa = [AnimForCoreBtn shake];
+            CAKeyframeAnimation *kfa = [CAAnimation shake];
             
             //设置代理
             kfa.delegate=self;

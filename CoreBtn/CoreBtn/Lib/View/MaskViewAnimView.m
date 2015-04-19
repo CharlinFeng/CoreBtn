@@ -19,7 +19,7 @@
     
     [view insertSubview:self atIndex:0];
     
-    [self constraintPrepare:self];
+    [self constraintAdd];
     
     //执行一个放大动画
     [self zoomAnim];

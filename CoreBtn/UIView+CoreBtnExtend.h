@@ -15,6 +15,6 @@
 /*
  *  给指定view添加一个和父控件一样大的约束
  */
--(void)constraintPrepare:(UIView *)view;
+-(void)constraintAdd;
 
 @end

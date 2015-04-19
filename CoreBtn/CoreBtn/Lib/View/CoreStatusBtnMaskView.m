@@ -52,7 +52,7 @@
     
     [super didMoveToSuperview];
     
-    [self constraintPrepare:self];
+    [self constraintAdd];
 }
 
 
