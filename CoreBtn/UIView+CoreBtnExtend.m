@@ -17,6 +17,8 @@
  */
 -(void)constraintAdd{
     
+    if(self.superview == nil) return;
+    
     self.translatesAutoresizingMaskIntoConstraints=NO;
     
     __weak UIView *view = self;

@@ -25,6 +25,10 @@
 @property (nonatomic,weak) CoreStatusBtn *statusBtn;
 
 
+/*
+ *  关闭放大效果
+ */
+@property (nonatomic,assign) BOOL shutOffZoomAnim;
 
 
 /**

@@ -36,16 +36,9 @@
 -(void)awakeFromNib{
     
     [super awakeFromNib];
-    
     self.status=CoreStatusBtnStatusNormal;
 }
 
--(void)layoutSubviews{
-    
-    [super layoutSubviews];
-    
-//    self.animView.frame=self.bounds;
-}
 
 
 -(void)didMoveToSuperview{
@@ -116,6 +109,8 @@
     
     self.alpha=1.0f;
     
+    if(self.shutOffZoomAnim) return;
+    
     //显示
     [self.animView show:self];
 }
@@ -167,6 +162,8 @@
         
         _animView = [[MaskViewAnimView alloc] init];
 
+        _animView.frame = self.bounds;
+        
         _animView.backgroundColor=self.backgroundColor;
     }
     

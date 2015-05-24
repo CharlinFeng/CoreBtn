@@ -64,12 +64,17 @@
  */
 -(void)countBtnPrepare{
     
+    //默认配置
     self.countNum = 60;
+    self.status = CoreCountBtnStatusNormal;
+    
     
 }
 
 
 -(void)setStatus:(CoreCountBtnStatus)status{
+    
+    if(_status == status) return;
     
     _status = status;
     

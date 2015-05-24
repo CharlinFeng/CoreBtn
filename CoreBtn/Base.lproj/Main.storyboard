@@ -20,7 +20,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAm-q5-FZl" customClass="CoreStatusBtn">
                                 <rect key="frame" x="55" y="285" width="158" height="51"/>
                                 <state key="normal" title="提交">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="btnClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cq2-of-wMK"/>
@@ -41,7 +41,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NtW-EK-XLq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="55" id="3AI-dc-DGv"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="NtW-EK-XLq" secondAttribute="bottom" constant="20" id="8D0-hw-2Qd"/>
@@ -54,6 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="327" y="253"/>
         </scene>
     </scenes>
 </document>

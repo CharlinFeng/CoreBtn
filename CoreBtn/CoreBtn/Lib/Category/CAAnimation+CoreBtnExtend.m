@@ -52,8 +52,6 @@
     //动画时长
     transition.duration=1.f;
     
-    NSInteger i=arc4random_uniform(10);
-    
     transition.type=[self animaType];
     
 //    NSUInteger subIndex=i%4;

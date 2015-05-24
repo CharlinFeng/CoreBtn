@@ -58,6 +58,7 @@
 -(void)btnPrepare{
     
     self.msg=nil;
+    self.clipsToBounds=NO;
 }
 
 
@@ -105,7 +106,7 @@
 
         _maskView=[CoreStatusBtnMaskView maskView];
         _maskView.statusBtn=self;
-
+        _maskView.shutOffZoomAnim = self.shutOffZoomAnim;
         [self addSubview:_maskView];
     }
     

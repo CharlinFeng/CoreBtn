@@ -48,6 +48,10 @@ typedef enum{
 @property (nonatomic,copy) NSString *msg;
 
 
+/*
+ *  关闭放大效果
+ */
+@property (nonatomic,assign) BOOL shutOffZoomAnim;
 
 
 @end
