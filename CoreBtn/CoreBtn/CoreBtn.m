@@ -24,21 +24,25 @@
 
 /** 普通情况 */
 -(void)setColorForNormal:(UIColor *)colorForNormal{
+    if(self.originalImage == nil) return;
     [self setImage:[self.originalImage imageWithTintColor:colorForNormal] forState:UIControlStateNormal];
 }
 
 /** 高亮 */
 -(void)setColorForHighlighted:(UIColor *)colorForHighlighted{
+    if(self.originalImage == nil) return;
     [self setImage:[self.originalImage imageWithTintColor:colorForHighlighted] forState:UIControlStateHighlighted];
 }
 
 /** 禁用 */
 -(void)setColorForDisabled:(UIColor *)colorForDisabled{
+    if(self.originalImage == nil) return;
     [self setImage:[self.originalImage imageWithTintColor:colorForDisabled] forState:UIControlStateDisabled];
 }
 
 /** 选中 */
 -(void)setColorForSelected:(UIColor *)colorForSelected{
+    if(self.originalImage == nil) return;
     [self setImage:[self.originalImage imageWithTintColor:colorForSelected] forState:UIControlStateSelected];
 }
 
