@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 沐汐. All rights reserved.
 //
 
-#import "UIImage+Color.h"
+#import "UIImage+btnColor.h"
 
-@implementation UIImage (Color)
+@implementation UIImage (btnColor)
 
 
 //给我一种颜色，一个尺寸，我给你返回一个UIImage

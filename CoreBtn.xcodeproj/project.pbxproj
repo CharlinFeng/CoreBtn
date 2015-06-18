@@ -11,7 +11,7 @@
 		89AC8E301B32740100B41E0C /* CoreCountBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC8E1E1B32740100B41E0C /* CoreCountBtn.m */; };
 		89AC8E311B32740100B41E0C /* CoreStatusBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC8E201B32740100B41E0C /* CoreStatusBtn.m */; };
 		89AC8E321B32740100B41E0C /* CAAnimation+CoreBtnExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC8E241B32740100B41E0C /* CAAnimation+CoreBtnExtend.m */; };
-		89AC8E331B32740100B41E0C /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC8E261B32740100B41E0C /* UIImage+Color.m */; };
+		89AC8E331B32740100B41E0C /* UIImage+btnColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC8E261B32740100B41E0C /* UIImage+btnColor.m */; };
 		89AC8E341B32740100B41E0C /* UIView+CoreBtnExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC8E281B32740100B41E0C /* UIView+CoreBtnExtend.m */; };
 		89AC8E351B32740100B41E0C /* CoreStatusBtnMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC8E2B1B32740100B41E0C /* CoreStatusBtnMaskView.m */; };
 		89AC8E361B32740100B41E0C /* CoreStatusBtnMaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89AC8E2C1B32740100B41E0C /* CoreStatusBtnMaskView.xib */; };
@@ -45,8 +45,8 @@
 		89AC8E201B32740100B41E0C /* CoreStatusBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatusBtn.m; sourceTree = "<group>"; };
 		89AC8E231B32740100B41E0C /* CAAnimation+CoreBtnExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+CoreBtnExtend.h"; sourceTree = "<group>"; };
 		89AC8E241B32740100B41E0C /* CAAnimation+CoreBtnExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+CoreBtnExtend.m"; sourceTree = "<group>"; };
-		89AC8E251B32740100B41E0C /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
-		89AC8E261B32740100B41E0C /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		89AC8E251B32740100B41E0C /* UIImage+btnColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+btnColor.h"; sourceTree = "<group>"; };
+		89AC8E261B32740100B41E0C /* UIImage+btnColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+btnColor.m"; sourceTree = "<group>"; };
 		89AC8E271B32740100B41E0C /* UIView+CoreBtnExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CoreBtnExtend.h"; sourceTree = "<group>"; };
 		89AC8E281B32740100B41E0C /* UIView+CoreBtnExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CoreBtnExtend.m"; sourceTree = "<group>"; };
 		89AC8E2A1B32740100B41E0C /* CoreStatusBtnMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatusBtnMaskView.h; sourceTree = "<group>"; };
@@ -116,8 +116,8 @@
 			children = (
 				89AC8E231B32740100B41E0C /* CAAnimation+CoreBtnExtend.h */,
 				89AC8E241B32740100B41E0C /* CAAnimation+CoreBtnExtend.m */,
-				89AC8E251B32740100B41E0C /* UIImage+Color.h */,
-				89AC8E261B32740100B41E0C /* UIImage+Color.m */,
+				89AC8E251B32740100B41E0C /* UIImage+btnColor.h */,
+				89AC8E261B32740100B41E0C /* UIImage+btnColor.m */,
 				89AC8E271B32740100B41E0C /* UIView+CoreBtnExtend.h */,
 				89AC8E281B32740100B41E0C /* UIView+CoreBtnExtend.m */,
 			);
@@ -315,7 +315,7 @@
 				89AC8E2F1B32740100B41E0C /* CoreBtn.m in Sources */,
 				D6BCD5381AA499590021850C /* AppDelegate.m in Sources */,
 				89AC8E351B32740100B41E0C /* CoreStatusBtnMaskView.m in Sources */,
-				89AC8E331B32740100B41E0C /* UIImage+Color.m in Sources */,
+				89AC8E331B32740100B41E0C /* UIImage+btnColor.m in Sources */,
 				89AC8E301B32740100B41E0C /* CoreCountBtn.m in Sources */,
 				D6BCD5351AA499590021850C /* main.m in Sources */,
 			);

@@ -7,7 +7,7 @@
 //
 
 #import "CoreBtn.h"
-#import "UIImage+Color.h"
+#import "UIImage+btnColor.h"
 
 @interface CoreBtn ()
 
