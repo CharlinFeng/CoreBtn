@@ -7,12 +7,47 @@
 //
 
 #import "CoreBtn.h"
-#import "UIImage+ColorForBtn.h"
+#import "UIImage+Color.h"
+
+@interface CoreBtn ()
+
+/** 原图片 */
+@property (nonatomic,weak) UIImage *originalImage;
+
+@end
+
 
 @implementation CoreBtn
 
 
+/** 图片着色 */
 
+/** 普通情况 */
+-(void)setColorForNormal:(UIColor *)colorForNormal{
+    [self setImage:[self.originalImage imageWithTintColor:colorForNormal] forState:UIControlStateNormal];
+}
+
+/** 高亮 */
+-(void)setColorForHighlighted:(UIColor *)colorForHighlighted{
+    [self setImage:[self.originalImage imageWithTintColor:colorForHighlighted] forState:UIControlStateHighlighted];
+}
+
+/** 禁用 */
+-(void)setColorForDisabled:(UIColor *)colorForDisabled{
+    [self setImage:[self.originalImage imageWithTintColor:colorForDisabled] forState:UIControlStateDisabled];
+}
+
+/** 选中 */
+-(void)setColorForSelected:(UIColor *)colorForSelected{
+    [self setImage:[self.originalImage imageWithTintColor:colorForSelected] forState:UIControlStateSelected];
+}
+
+
+
+
+
+
+/** 背景色 */
 #pragma mark  普通状态
 -(void)setBackgroundColorForNormal:(UIColor *)backgroundColorForNormal{
     
@@ -51,5 +86,16 @@
     self.titleLabel.font=[UIFont systemFontOfSize:fontPoint];
 }
 
+
+
+/** 原图 */
+-(UIImage *)originalImage{
+    
+    if(_originalImage == nil){
+        _originalImage = [self imageForState:UIControlStateNormal];
+    }
+    
+    return _originalImage;
+}
 
 @end

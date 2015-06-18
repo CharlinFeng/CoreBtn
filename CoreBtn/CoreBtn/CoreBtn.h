@@ -25,6 +25,18 @@
 //被选中状态下的颜色
 @property (nonatomic,strong) UIColor *backgroundColorForSelected;
 
+/** 图片着色:普通 */
+@property (nonatomic,strong) UIColor *colorForNormal;
+
+/** 图片着色:高亮 */
+@property (nonatomic,strong) UIColor *colorForHighlighted;
+
+/** 图片着色:禁用 */
+@property (nonatomic,strong) UIColor *colorForDisabled;
+
+/** 图片着色:选中 */
+@property (nonatomic,strong) UIColor *colorForSelected;
+
 //字体大小
 @property (nonatomic,assign) CGFloat fontPoint;
 
