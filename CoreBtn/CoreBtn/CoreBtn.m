@@ -21,8 +21,7 @@
 @implementation CoreBtn
 
 
-
-
+/** 所有事件 */
 -(void)Click:(UIControlEvents)event ClickBlock:(void (^)())ClickBlock{
     _ClickBlock = ClickBlock;
     [self addTarget:self action:@selector(btnClick) forControlEvents:event];
@@ -42,10 +41,6 @@
 -(void)btnClick{
     if(_ClickBlock != nil) _ClickBlock();
 }
-
-
-
-
 
 
 
