@@ -14,10 +14,39 @@
 /** 原图片 */
 @property (nonatomic,weak) UIImage *originalImage;
 
+
 @end
 
 
 @implementation CoreBtn
+
+
+
+
+-(void)Click:(UIControlEvents)event ClickBlock:(void (^)())ClickBlock{
+    _ClickBlock = ClickBlock;
+    [self addTarget:self action:@selector(btnClick) forControlEvents:event];
+    
+}
+
+
+/** 最常见事件 */
+-(void)setClickBlock:(void (^)())ClickBlock{
+    
+    _ClickBlock = ClickBlock;
+    
+    [self Click:UIControlEventTouchUpInside ClickBlock:ClickBlock];
+}
+
+
+-(void)btnClick{
+    if(_ClickBlock != nil) _ClickBlock();
+}
+
+
+
+
+
 
 
 /** 图片着色 */
@@ -101,5 +130,10 @@
     
     return _originalImage;
 }
+
+
+
+
+
 
 @end

@@ -57,6 +57,14 @@
         
         self.countBtn.status=CoreCountBtnStatusNormal;
     });
+    
+    
+    CoreBtn *btn2 = [[CoreBtn alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
+    btn2.backgroundColorForNormal = [UIColor redColor];
+    [self.view addSubview:btn2];
+    [btn2 Click:UIControlEventTouchDown ClickBlock:^{
+        NSLog(@"点击");
+    }];
 }
 
 

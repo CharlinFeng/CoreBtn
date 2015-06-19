@@ -37,8 +37,13 @@
 /** 图片着色:选中 */
 @property (nonatomic,strong) UIColor *colorForSelected;
 
-//字体大小
+/** 字体大小 */
 @property (nonatomic,assign) CGFloat fontPoint;
 
+/** 最常用的点击事件 */
+@property (nonatomic,copy) void (^ClickBlock)();
+
+/** 事件 */
+-(void)Click:(UIControlEvents)event ClickBlock:(void(^)())ClickBlock;
 
 @end
