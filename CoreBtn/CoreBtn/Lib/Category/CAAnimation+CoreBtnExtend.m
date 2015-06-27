@@ -42,46 +42,6 @@
 
 
 
-/*
- *  转场动画
- */
-+(CATransition *)transition{
-    
-    CATransition *transition=[CATransition animation];
-    
-    //动画时长
-    transition.duration=1.f;
-    
-    transition.type=[self animaType];
-    
-//    NSUInteger subIndex=i%4;
-    
-    //设置转场动画的方向
-    NSArray *subtypes=@[kCATransitionFromTop,kCATransitionFromLeft,kCATransitionFromBottom,kCATransitionFromRight];
-    transition.subtype=subtypes[0];
-    
-    //时间函数
-//    NSUInteger timingFunctionIndex=i%5;
-    NSArray *funcNames=@[kCAMediaTimingFunctionDefault,kCAMediaTimingFunctionEaseIn,kCAMediaTimingFunctionEaseInEaseOut,kCAMediaTimingFunctionEaseOut,kCAMediaTimingFunctionLinear];
-    transition.timingFunction=[CAMediaTimingFunction functionWithName:funcNames[2]];
-    
-    //动画完成删除
-    transition.removedOnCompletion=YES;
-    
-    return transition;
-}
-
-
-
-+(NSString *)animaType{
-    
-    //设置转场动画的类型
-    NSArray *animArray=@[@"rippleEffect",@"suckEffect",@"pageCurl",@"oglFlip",@"cube",@"reveal",@"pageUnCurl"];
-//    NSUInteger i=arc4random_uniform(animArray.count);
-    
-    return animArray[4];
-}
-
 
 
 @end

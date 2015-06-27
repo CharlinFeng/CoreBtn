@@ -20,11 +20,4 @@
 +(CAKeyframeAnimation *)shake;
 
 
-
-
-/*
- *  转场动画
- */
-+(CATransition *)transition;
-
 @end

@@ -8,7 +8,6 @@
 
 #import "CoreCountBtn.h"
 #import "UIView+CoreBtnExtend.h"
-#import "CAAnimation+CoreBtnExtend.h"
 
 
 
@@ -103,9 +102,6 @@
     self.enabled = YES;
     
     [self.countLabel removeFromSuperview];
-    
-    //添加一个动画
-    [self.layer addAnimation:[CAAnimation transition] forKey:@"transition"];
 }
 
 
@@ -121,9 +117,6 @@
     [self addSubview:self.countLabel];
     
     [self.countLabel constraintAdd];
-    
-    //添加一个动画
-    [self.layer addAnimation:[CAAnimation transition] forKey:@"transition"];
     
     //计数恢复最大
     _countNum = _originalCountNum;
@@ -144,12 +137,7 @@
         return;
     }
     
-    if(_countNum!=_originalCountNum){
-        
-        //添加一个动画
-        [self.countLabel.layer addAnimation:[CAAnimation transition] forKey:@"transition"];
-    }
-    
+
     self.countLabel.text = [NSString stringWithFormat:@"%@ 秒",@(_countNum--)];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.2f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -205,9 +193,7 @@
 
 
 -(void)dealloc{
-    
-    [self.layer removeAllAnimations];
-    [self.countLabel.layer removeAllAnimations];
+
     self.countLabel=nil;
 }
 
