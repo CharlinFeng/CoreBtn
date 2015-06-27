@@ -11,7 +11,7 @@
 
 框架截图 SHOW
 ===============
-![image](./CoreBtn/show.gif)<br /><br />
+![image](./CoreBtn/show3.gif)<br /><br />
 <br />
 
 
