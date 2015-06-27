@@ -74,7 +74,7 @@
         [self.view addSubview:btn2];
         [btn2 Click:UIControlEventTouchDown ClickBlock:^{
             NSLog(@"点击");
-    }];
+        }];
 
 <br /><br />
 
