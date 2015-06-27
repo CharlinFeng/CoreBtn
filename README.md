@@ -1,7 +1,7 @@
 #CoreBtn
 ####核心按钮，让界面更专业！旨在替代一部份HUD的Btn。
 
-
+<br /><br />
 说明 EXPLAIN
 ===============
 个人不是很喜欢到处的HUD黑块，于是就有了CoreBtn以及CoreStatusBtn,希望你喜欢。
