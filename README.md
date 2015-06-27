@@ -4,7 +4,7 @@
 <br /><br />
 说明 EXPLAIN
 ===============
-个人不是很喜欢到处的HUD黑块，于是就有了CoreBtn以及CoreStatusBtn,希望你喜欢。
+个人不是很喜欢到处的HUD黑块，于是就有了CoreBtn以及CoreStatusBtn,希望你喜欢。<br />
 成都iOS开发群：<br />
 二群：369870753（新开，新鲜着呢，快加） <br />
 一群：163865401（已爆满，加不上了）  <br /><br />
