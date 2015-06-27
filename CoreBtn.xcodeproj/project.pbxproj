@@ -16,6 +16,7 @@
 		89AC8E361B32740100B41E0C /* CoreStatusBtnMaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89AC8E2C1B32740100B41E0C /* CoreStatusBtnMaskView.xib */; };
 		89AC8E371B32740100B41E0C /* MaskViewAnimView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AC8E2E1B32740100B41E0C /* MaskViewAnimView.m */; };
 		89BF37A01B3E53C40090F120 /* CAAnimation+CoreBtnExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BF379F1B3E53C40090F120 /* CAAnimation+CoreBtnExtend.m */; };
+		89BF37A21B3E55180090F120 /* show.gif in Resources */ = {isa = PBXBuildFile; fileRef = 89BF37A11B3E55180090F120 /* show.gif */; };
 		D6B757011AA4BD2B00AF0B0F /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B757001AA4BD2B00AF0B0F /* 1.png */; };
 		D6BCD5351AA499590021850C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BCD5341AA499590021850C /* main.m */; };
 		D6BCD5381AA499590021850C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BCD5371AA499590021850C /* AppDelegate.m */; };
@@ -54,6 +55,7 @@
 		89AC8E2E1B32740100B41E0C /* MaskViewAnimView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskViewAnimView.m; sourceTree = "<group>"; };
 		89BF379E1B3E53C40090F120 /* CAAnimation+CoreBtnExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+CoreBtnExtend.h"; sourceTree = "<group>"; };
 		89BF379F1B3E53C40090F120 /* CAAnimation+CoreBtnExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+CoreBtnExtend.m"; sourceTree = "<group>"; };
+		89BF37A11B3E55180090F120 /* show.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = show.gif; sourceTree = "<group>"; };
 		D6B757001AA4BD2B00AF0B0F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		D6BCD52F1AA499590021850C /* CoreBtn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreBtn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BCD5331AA499590021850C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		D6BCD5321AA499590021850C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				89BF37A11B3E55180090F120 /* show.gif */,
 				D6B756FF1AA4BD2B00AF0B0F /* Img */,
 				D6BCD5331AA499590021850C /* Info.plist */,
 				D6BCD5341AA499590021850C /* main.m */,
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6BCD53E1AA499590021850C /* Main.storyboard in Resources */,
+				89BF37A21B3E55180090F120 /* show.gif in Resources */,
 				D6BCD5431AA4995A0021850C /* LaunchScreen.xib in Resources */,
 				89AC8E361B32740100B41E0C /* CoreStatusBtnMaskView.xib in Resources */,
 				D6BCD5401AA4995A0021850C /* Images.xcassets in Resources */,
