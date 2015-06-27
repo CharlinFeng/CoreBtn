@@ -37,8 +37,8 @@
 框架说明 EXPALIN
 ===============
 
-以下是一些使用示例：
-     //代码
+        以下是一些使用示例：
+        //代码
         CoreStatusBtn *btn=[[CoreStatusBtn alloc] initWithFrame:CGRectMake(50, 110, 160, 40)];
         btn.msg=@"登陆中";
         //    btn.shutOffZoomAnim = YES;
