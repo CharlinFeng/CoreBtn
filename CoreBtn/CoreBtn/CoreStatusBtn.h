@@ -35,23 +35,21 @@ typedef enum{
 
 
 
-/**
- *  状态
- */
+
+/** 状态 */
 @property (nonatomic,assign) CoreStatusBtnStatus status;
 
 
-
-/**
- *  提示文字
- */
+/** 提示文字 */
 @property (nonatomic,copy) NSString *msg;
 
 
-/*
- *  关闭放大效果
- */
+/** 关闭放大效果 */
 @property (nonatomic,assign) BOOL shutOffZoomAnim;
+
+
+/** 关闭颜色动画 */
+@property (nonatomic,assign) BOOL shutOffColorLoadingAnim;
 
 
 @end

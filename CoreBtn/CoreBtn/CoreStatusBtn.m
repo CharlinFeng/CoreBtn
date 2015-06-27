@@ -12,8 +12,14 @@
 
 @interface CoreStatusBtn ()
 
-//遮罩层
+
+/** 遮罩层 */
 @property (nonatomic,strong) CoreStatusBtnMaskView *maskView;
+
+/** 是否高亮中 */
+@property (nonatomic,assign) BOOL isHL;
+
+@property (nonatomic,strong) NSTimer *timer;
 
 @end
 
@@ -64,7 +70,7 @@
 
 
 -(void)setStatus:(CoreStatusBtnStatus)status{
-
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         
         _status=status;
@@ -82,8 +88,45 @@
         }
         
         self.maskView.status=status;
+        
+        if(self.shutOffColorLoadingAnim) return;
+        
+        if(CoreStatusBtnStatusProgress == status){
+            [self showLoadingStatus];
+        }else{
+            [self dismissLoadingStatus];
+        }
     });
 }
+
+
+
+-(void)showLoadingStatus{
+    
+    [self timerOn];
+}
+
+
+-(void)toggleBgColor{
+    
+    [UIView animateWithDuration:.2 animations:^{
+        if(!self.isHL){
+            self.maskView.backgroundColor = self.backgroundColorForHighlighted;
+        }else{
+            self.maskView.backgroundColor = self.backgroundColorForNormal;
+        }
+    }];
+    self.isHL = !self.isHL;
+}
+
+
+-(void)dismissLoadingStatus{
+    
+    [self timerOff];
+    
+    self.backgroundColorForNormal = self.backgroundColorForNormal;
+}
+
 
 
 
@@ -121,6 +164,22 @@
 }
 
 
- 
+-(void)timerOn{
+    
+    if(self.timer != nil) return;
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:.25f target:self selector:@selector(toggleBgColor) userInfo:nil repeats:YES];
+    
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+}
+
+-(void)timerOff{
+    
+    if(self.timer == nil) return;
+    
+    [self.timer invalidate];
+    
+    self.timer = nil;
+}
 
 @end

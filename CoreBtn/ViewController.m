@@ -32,7 +32,7 @@
     
     CoreStatusBtn *btn=[[CoreStatusBtn alloc] initWithFrame:CGRectMake(50, 110, 160, 40)];
     btn.msg=@"登陆中";
-    btn.shutOffZoomAnim = YES;
+//    btn.shutOffZoomAnim = YES;
     //设置文字
     [btn setTitle:@"我是按钮" forState:UIControlStateNormal];
     
@@ -49,6 +49,7 @@
 
     //nib
     self.myBtn.backgroundColorForNormal=rgb(121, 36, 98);
+    self.myBtn.shutOffColorLoadingAnim = YES;
     self.myBtn.shutOffZoomAnim = YES;
     self.countBtn.backgroundColorForNormal=rgb(167, 132, 27);
     self.countBtn.countNum=60;
@@ -74,7 +75,7 @@
 
     //子线程测试
     dispatch_queue_t queue=dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), queue, ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), queue, ^{
         btn.status=CoreStatusBtnStatusFalse;
     });
 }
