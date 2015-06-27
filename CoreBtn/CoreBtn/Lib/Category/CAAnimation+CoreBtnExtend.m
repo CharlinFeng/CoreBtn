@@ -18,20 +18,20 @@
  */
 +(CAKeyframeAnimation *)shake{
     
-    CAKeyframeAnimation *kfa=[CAKeyframeAnimation animationWithKeyPath:@"transform.rotation"];
+    CAKeyframeAnimation *kfa=[CAKeyframeAnimation animationWithKeyPath:@"transform.translation.x"];
     
     //值
-    CGFloat angle = .16f;
-    kfa.values=@[@(angle),@(0),@(-angle),@(0),@(angle),@(0),@(-angle)];
+    CGFloat angle = 16;
+    kfa.values=@[@(angle),@(0),@(-angle*.9),@(0),@(angle*.8),@(0),@(-angle*.7),@(0),@(angle*.55),@(0),@(-angle*.45),@(0),@(-angle*.35),@(0),@(angle*.2),@(0),@(-angle*.15),@(0),@(-angle*.1),@(0)];
     
     //设置时间
-    kfa.duration=0.1f;
-    
-    //是否重复
-    kfa.repeatCount=4.0f;
+    kfa.duration=1.f;
     
     //是否反转
-    kfa.autoreverses=YES;
+    kfa.autoreverses=NO;
+    
+    //曲线
+    kfa.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
     
     //完成移除
     kfa.removedOnCompletion=YES;
