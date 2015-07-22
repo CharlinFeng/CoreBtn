@@ -167,7 +167,8 @@
         _countLabel.font=self.titleLabel.font;
         
         //背景色
-        _countLabel.backgroundColor = self.backgroundColorForNormal;
+        UIColor *color = self.backgroundColorForNormal;
+        _countLabel.backgroundColor =color==nil?[UIColor whiteColor]: color;
     }
     
     return _countLabel;
