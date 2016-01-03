@@ -21,6 +21,7 @@
 @implementation CoreBtn
 
 
+
 /** 所有事件 */
 -(void)Click:(UIControlEvents)event ClickBlock:(void (^)())ClickBlock{
     _ClickBlock = ClickBlock;
