@@ -83,8 +83,12 @@
             
             [self statusNormal];
             
+            [self setTitle:self.titleStr forState:UIControlStateNormal];
+            
         }else{//计数状态
             
+            self.titleStr = self.currentTitle;
+            [self setTitle:nil forState:UIControlStateNormal];
             [self statusCounting];
             
         }
@@ -137,7 +141,8 @@
         return;
     }
     
-
+    
+    
     self.countLabel.text = [NSString stringWithFormat:@"%@ 秒",@(_countNum--)];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.2f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -167,8 +172,8 @@
         _countLabel.font=self.titleLabel.font;
         
         //背景色
-        UIColor *color = self.backgroundColorForNormal;
-        _countLabel.backgroundColor =color==nil?[UIColor whiteColor]: color;
+        //        UIColor *color = self.backgroundColorForNormal;
+        //        _countLabel.backgroundColor =color==nil?[UIColor whiteColor]: color;
     }
     
     return _countLabel;
@@ -194,7 +199,7 @@
 
 
 -(void)dealloc{
-
+    
     self.countLabel=nil;
 }
 
